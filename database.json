@@ -1,24 +1,24 @@
 {
     "test": {
-        "driver":"pg",
-        "user": {"ENV": "TEST_DB_USERNAME"},
-        "password": {"ENV": "TEST_DB_PASSWORD"},
-        "host": {"ENV": "TEST_DB_HOST"},
-        "database": {"ENV": "TEST_DB_DATABASE_NAME"}
+        "driver": "pg",
+        "user": { "ENV": "TEST_DB_USERNAME" },
+        "password": { "ENV": "TEST_DB_PASSWORD" },
+        "host": { "ENV": "TEST_DB_HOST" },
+        "database": { "ENV": "TEST_DB_DATABASE_NAME" }
     },
     "dev": {
         "driver": "pg",
-        "user": {"ENV": "DEV_DB_USERNAME"},
-        "password": {"ENV": "DEV_DB_PASSWORD"},
-        "host": {"ENV": "DEV_DB_HOST"},
-        "database": {"ENV": "DEV_DB_DATABASE_NAME"}
+        "user": { "ENV": "DEV_DB_USERNAME" },
+        "password": { "ENV": "DEV_DB_PASSWORD" },
+        "host": { "ENV": "DEV_DB_HOST" },
+        "database": { "ENV": "DEV_DB_DATABASE_NAME" }
     },
     "prod": {
         "driver": "pg",
-        "user": {"ENV": "PROD_DB_USERNAME"},
-        "password": {"ENV": "PROD_DB_USERNAME"},
-        "host": {"ENV": "PROD_DB_USERNAME"},
-        "database": {"ENV": "PROD_DB_USERNAME"}
+        "user": { "ENV": "PROD_DB_USERNAME" },
+        "password": { "ENV": "PROD_DB_USERNAME" },
+        "host": { "ENV": "PROD_DB_USERNAME" },
+        "database": { "ENV": "PROD_DB_USERNAME" }
     }
-        
+
 }
