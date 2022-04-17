@@ -1,9 +1,9 @@
 import express, { Request, response, Response } from 'express'
 import bodyParser from 'body-parser'
-import registerUsersRoutes from './models/Users/userRoutes'
-import ProductStore, { Product } from './models/Products/productStore'
+
+import UsersRoutesHandlers from './models/Users/userRoutes'
 import ProductRoutesHandlers from './models/Products/productRoutes'
-// import ProductStore from './models/Products/productStore'
+import OrderRoutesHandlers from './models/Orders/orderRoutes'
 
 const app: express.Application = express()
 const address: string = "0.0.0.0:3000"
@@ -11,9 +11,9 @@ const address: string = "0.0.0.0:3000"
 app.use(bodyParser.json())
 
 
-registerUsersRoutes(app);
+UsersRoutesHandlers(app);
 ProductRoutesHandlers(app);
-
+OrderRoutesHandlers(app);
 
 app.get('/', async function (req: Request, resp: Response) {
    resp.send(`
