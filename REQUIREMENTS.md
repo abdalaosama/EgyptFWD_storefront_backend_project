@@ -15,6 +15,8 @@ These are the notes from a meeting with the frontend developer that describe wha
 - Index [token required]
 - Show [token required]
 - Create N[token required]
+- Login
+- Register
 
 #### Orders
 - Current Order by user (args: user id)[token required]
