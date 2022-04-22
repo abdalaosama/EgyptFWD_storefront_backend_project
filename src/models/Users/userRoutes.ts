@@ -2,7 +2,6 @@ import express from "express";
 import  UsersStore, { User } from "./userStore";
 
 
-
 export default function UsersRoutesHandlers (app: express.Application): void{
     app.get('/api/users', async (req: express.Request , resp: express.Response): Promise<void> => {
         try{

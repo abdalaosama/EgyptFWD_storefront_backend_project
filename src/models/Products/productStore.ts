@@ -30,4 +30,18 @@ export default class ProductStore {
             // return null;
         }
     }
+
+    async create(product: Product): Promise<Product | null>{
+        try {
+            const query = (await db `INSERT INTO products (name, price) VALUES (${product.name}, ${product.price}) RETURNING *;` as unknown) as Product;
+            console.log(query)
+            return query
+
+        } catch (error) {
+            console.log(error)
+            throw (error);
+        }
+
+        return null
+    }
 }
