@@ -7,17 +7,18 @@ These are the notes from a meeting with the frontend developer that describe wha
 ----------------------------------------------------------
 ## API Endpoints
 
-GET  => /api/products       // index all the products
-GET  => /api/product/:id    // get a specific product
-POST => /api/product        // Create a product {Auth Required}
+<b>GET  => /api/products       // index all the products<br>
+GET  => /api/product/:id    // get a specific product<br>
+POST => /api/product        // Create a product {Auth Required}<br>
 
-GET  => /api/users          // Index a product {Auth Required}
-GET  => /api/user/:id       // show a user {Auth Required}
-POST => /api/user           // Create a user
-POST => /api/auth/login     // login as a user
-
-GET  => /api/user/:id/order // Get Current Order By ID {Auth Required}
-
+GET  => /api/users          // Index a product {Auth Required}<br>
+GET  => /api/user/:id       // show a user {Auth Required}<br>
+POST => /api/user           // Create a user<br>
+POST => /api/auth/login     // login as a user<br>
+</b>
+<b>
+GET  => /api/orders // Get Current Order By ID {Auth Required}<br>
+</b>
 
 ---------------------------------------------
 ## Data Shapes

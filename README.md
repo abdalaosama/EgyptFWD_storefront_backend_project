@@ -1,6 +1,4 @@
 # Storefront Backend Project
-
-## Getting Started
 This repo contains the storefront Backend Express app
 
 ## Used Technologies
@@ -12,56 +10,64 @@ the application makes use of the following libraries:
 - jsonwebtoken from npm for working with JWTs
 - jasmine from npm for testing
 
+
+## Installation
+To run this project you need to have a running instance of postgreSQL and a database created. <br>
+Please Follow the documentation below to learn how to install and run an instance<br>
+https://www.postgresql.org/docs/
+
+to install the project Please run the following command.
+
+```
+git clone https://github.com/abdalaosama/EgyptFWD_storefront_backend_project.git
+cd EgyptFWD_storefront_backend_project
+npm i
+cp ENV_EXAMPLE.txt .env
+```
+- then you will need to provide the postgres Database creds in the .env File
+
+## to run the project 
+    
+- make sure that postgres database server is up and running
+- go into the the project directory.
+- run `npm run start` in the terminal
+
 ## Steps of Completion
+- Determined the RESTful route for each endpoint listed. Added the RESTful route and HTTP verb to the document so that the frontend developer can begin to build their fetch requests.  [Look at API ENDPOINTS in REQUIREMENTS.md File]
 
+- Designd the Postgres database tables based off the data shape requirements. Add to the requirements document the database tables and columns being sure to mark foreign keys.   
 ----------------------------------------------------------
-
-- Determine the RESTful route for each endpoint listed. Add the RESTful route and HTTP verb to the document so that the frontend developer can begin to build their fetch requests.    
-
-GET  => /api/products       // index all the products
-GET  => /api/product/:id    // get a specific product
-POST => /api/product        // Create a product
-
-GET  => /api/users          // Index a product
-GET  => /api/user/:id       // show a user
-POST => /api/user           // Create a user
-POST => /api/auth/login     // login as a user
-
-GET  => /api/user/:id/order // Get Current Order By ID
-----------------------------------------------------------
-
-- Design the Postgres database tables based off the data shape requirements. Add to the requirements document the database tables and columns being sure to mark foreign keys.   
-
-Product
+# Database Schema
+### Product
 - id                integer
 - name              varchar(100)
 - price             numeric
 
-User
+### User
 - id                integer
 - first_name        varchar(100)
 - last_name         varchar(100)
 - password          varchar(100)
 
-Order_headers
+### Order_headers
 - id                integer
 - user_id           integer FK (User.id)
 - status_of_order   varchar(100) (active or complete) 
 
-Order_details
+### Order_details
 - id                integer
 - order_id          integer FK (Order_headers)
 - product_id        integer FK (Product.id)
 - qty               integer
 ----------------------------------------------------------
 
-### 2.  DB Creation and Migrations, DONE
+### DONE 2.  DB Creation and Migrations, 
 
-### 3. Models DONE
+### DONE 3. Models 
 
-### 4. Express Handlers DONE
+### DONE 4. Express Handlers 
 
-### 5. JWTs DONE
+### DONE 5. JWTs 
 
-### 6. QA and `README.md` DONE
+### DONE 6. QA and `README.md` 
 
