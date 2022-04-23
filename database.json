@@ -16,9 +16,9 @@
     "prod": {
         "driver": "pg",
         "user": { "ENV": "PROD_DB_USERNAME" },
-        "password": { "ENV": "PROD_DB_USERNAME" },
-        "host": { "ENV": "PROD_DB_USERNAME" },
-        "database": { "ENV": "PROD_DB_USERNAME" }
+        "password": { "ENV": "PROD_DB_PASSWORD" },
+        "host": { "ENV": "PROD_DB_HOST" },
+        "database": { "ENV": "PROD_DB_DATABASE_NAME" }
     }
 
 }
