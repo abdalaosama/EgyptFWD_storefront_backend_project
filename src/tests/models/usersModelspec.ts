@@ -19,7 +19,7 @@ describe("Users Model", () => {
         })
 
         it("returns new user", () => {
-            expect(newUser[0]).toEqual(jasmine.objectContaining( {"first_name": "test_user", "last_name": "test_user_lastname", uid: 1}));
+            expect(newUser[0]).toEqual(jasmine.objectContaining( {"first_name": "test_user", "last_name": "test_user_lastname"}));
         })
 
     })
@@ -35,7 +35,7 @@ describe("Users Model", () => {
         })
 
         it("returns new user with ID = 1", () => {
-            expect(result[0]).toEqual(jasmine.objectContaining( {"first_name": "test_user", "last_name": "test_user_lastname", uid: 1}));
+            expect(result[0]).toEqual(jasmine.objectContaining( {"first_name": "test_user", "last_name": "test_user_lastname"}));
         })
     })
 
@@ -50,7 +50,7 @@ describe("Users Model", () => {
         })
 
         it("returns new user with ID = 1", () => {
-            expect(result[0]).toEqual(jasmine.objectContaining( {"first_name": "test_user", "last_name": "test_user_lastname", uid: 1}));
+            expect(result[0]).toEqual(jasmine.objectContaining( {"first_name": "test_user", "last_name": "test_user_lastname"}));
         })
     })
 

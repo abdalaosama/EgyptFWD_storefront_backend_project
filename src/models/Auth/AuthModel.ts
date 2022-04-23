@@ -15,8 +15,4 @@ export default class Auth{
         return null;
     }
     }
-
-    async CheckJwt(token: string): Promise<boolean>{
-        return jsonwebtoken.verify(token, process.env.JWT_SECRET as string)? true : false;
-    }
 }
