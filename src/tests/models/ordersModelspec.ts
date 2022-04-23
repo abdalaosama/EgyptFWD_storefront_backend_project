@@ -48,7 +48,7 @@ describe("Order Model", () => {
             expect(result).toBeDefined();
         });
         it("Returns Order", () => {
-            expect(result).toEqual({order_id: 1,user_id: 1,status: 'pending',line_id: 1,product_id: 1,qty: '2'});
+            expect(result).toEqual({order_id: 1,user_id: 1,status: 'pending',line_id: 1,product_id: 1,qty: '1'});
         })
     })
 })
