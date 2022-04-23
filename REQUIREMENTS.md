@@ -3,23 +3,21 @@ The company stakeholders want to create an online storefront to showcase their g
 
 These are the notes from a meeting with the frontend developer that describe what endpoints the API needs to supply, as well as data shapes the frontend and backend have agreed meet the requirements of the application. 
 
+
+----------------------------------------------------------
 ## API Endpoints
-#### Products
-- Index 
-- Show
-- Create [token required]
-- [OPTIONAL] Top 5 most popular products 
-- [OPTIONAL] Products by category (args: product category)
 
-#### Users
-- Index [token required]
-- Show [token required]
-- Create
-- Login
+GET  => /api/products       // index all the products
+GET  => /api/product/:id    // get a specific product
+POST => /api/product        // Create a product {Auth Required}
 
-#### Orders
-- Current Order by user (args: user id)[token required]
-- [OPTIONAL] Completed Orders by user (args: user id)[token required]
+GET  => /api/users          // Index a product {Auth Required}
+GET  => /api/user/:id       // show a user {Auth Required}
+POST => /api/user           // Create a user
+POST => /api/auth/login     // login as a user
+
+GET  => /api/user/:id/order // Get Current Order By ID {Auth Required}
+
 
 ---------------------------------------------
 ## Data Shapes
