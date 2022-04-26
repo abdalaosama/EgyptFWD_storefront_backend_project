@@ -1,9 +1,9 @@
 import express from "express";
-import ProductStore, { Product } from "./productStore";
-import { getAuth, requireAuth } from "../../utils/auth_middleware";
+import ProductStore, { Product } from "../models/Products/productStore";
+import { getAuth, requireAuth } from "../utils/auth_middleware";
 
 export default function ProductRoutesHandlers(app: express.Application): void{
-    app.get('/api/products', getAuth, requireAuth, async (req: express.Request, resp: express.Response) => {
+    app.get('/api/products', async (req: express.Request, resp: express.Response) => {
         try{
 
             //ts-ignore

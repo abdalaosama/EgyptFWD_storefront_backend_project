@@ -2,10 +2,10 @@ const cookieParser = require("cookie-parser");
 import express, { Request, response, Response } from 'express'
 import bodyParser from 'body-parser'
 
-import UsersRoutesHandlers from './models/Users/userRoutes'
-import ProductRoutesHandlers from './models/Products/productRoutes'
-import OrderRoutesHandlers from './models/Orders/orderRoutes'
-import AuthRoutesHandlers from './models/Auth/AuthRoutes'
+import UsersRoutesHandlers from './routes/userRoutes'
+import ProductRoutesHandlers from './routes/productRoutes'
+import OrderRoutesHandlers from './routes/orderRoutes'
+import AuthRoutesHandlers from './routes/AuthRoutes'
 
 const app: express.Application = express()
 const address: string = "0.0.0.0:3000"
@@ -37,3 +37,5 @@ app.get('/', async function (req: Request, resp: Response) {
 app.listen(3000, function () {
     console.log(`starting app on: ${address}`)
 })
+
+export default app;

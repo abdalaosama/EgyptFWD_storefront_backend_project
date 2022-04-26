@@ -1,5 +1,5 @@
 import express from "express";
-import UsersStore, { User } from "../Users/userStore";
+import UsersStore, { User } from "../models/Users/userStore";
 import jsonwebtoken from 'jsonwebtoken';
 
 export default function AuthRoutesHandlers(app: express.Application): void {

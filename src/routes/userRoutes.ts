@@ -1,5 +1,5 @@
 import express from "express";
-import  UsersStore, { User } from "./userStore";
+import  UsersStore, { User } from "../models/Users/userStore";
 
 
 export default function UsersRoutesHandlers (app: express.Application): void{

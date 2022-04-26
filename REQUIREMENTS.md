@@ -7,7 +7,8 @@ These are the notes from a meeting with the frontend developer that describe wha
 ----------------------------------------------------------
 ## API Endpoints
 
-<b>GET  => /api/products       // index all the products<br>
+<b>
+GET  => /api/products       // index all the products<br>
 GET  => /api/product/:id    // get a specific product<br>
 POST => /api/product        // Create a product {Auth Required}<br>
 

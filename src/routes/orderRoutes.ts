@@ -1,6 +1,6 @@
 import express from "express";
-import { getAuth, requireAuth } from "../../utils/auth_middleware";
-import OrderStore, {Order} from "./orderStore";
+import { getAuth, requireAuth } from "../utils/auth_middleware";
+import OrderStore, {Order} from "../models/Orders/orderStore";
 
 export default function OrderRoutesHandlers(app: express.Application): void {
     app.get('/api/orders', getAuth, requireAuth, async (req: express.Request, resp: express.Response) => {

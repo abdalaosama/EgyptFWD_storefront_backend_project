@@ -1,20 +1,30 @@
 # Storefront Backend Project
 This repo contains the storefront Backend Express app
 
-## Used Technologies
-the application makes use of the following libraries:
-- Postgres for the database
-- Node/Express for the application logic
-- dotenv from npm for managing environment variables
-- db-migrate from npm for migrations
-- jsonwebtoken from npm for working with JWTs
-- jasmine from npm for testing
+## Project Info "Port number for db and server."
+the Nodejs Project start on the port `3000`
+and it could be edited from the `server.ts` file in the `/src` directory.
 
+the Default Postgres Database port is: `5432`
 
-## Installation
+## Installation     "Package installation instructions. && Setup db and server instructions."
 To run this project you need to have a running instance of postgreSQL and a database created. <br>
 Please Follow the documentation below to learn how to install and run an instance<br>
 https://www.postgresql.org/docs/
+
+< Reviewer Note >
+Hello,
+I don't actually know what is meant by setup db instructions ?
+You need to have a postgres Instance installed. The how to do that is a very wide an open subject
+and depends on multiple factors which I know nothing about like what opreating system you are using
+and what setup method you prefer (GUI/TERMINAL), so I have included the postgres docs above as a refrence for if you need to install an instance. Maybe you mean something else that I am not aware of. Please explain more :) 
+Thank you!! 
+</ Reviewer Note >
+
+you need to execute the following SQL query to create the diffrenet required databases (which all could be one).
+```
+CREATE DATABASE prod; CREATE DATABASE test; CREATE DATABASE dev; 
+```
 
 to install the project Please run the following command.
 
@@ -31,6 +41,18 @@ cp ENV_EXAMPLE.txt .env
 - make sure that postgres database server is up and running
 - go into the the project directory.
 - run `npm run start` in the terminal
+
+## to test the project 
+Please use the following
+`npm run test`
+## Used Technologies
+the application makes use of the following libraries:
+- Postgres for the database
+- Node/Express for the application logic
+- dotenv from npm for managing environment variables
+- db-migrate from npm for migrations
+- jsonwebtoken from npm for working with JWTs
+- jasmine from npm for testing
 
 ## Steps of Completion
 - Determined the RESTful route for each endpoint listed. Added the RESTful route and HTTP verb to the document so that the frontend developer can begin to build their fetch requests.  [Look at API ENDPOINTS in REQUIREMENTS.md File]

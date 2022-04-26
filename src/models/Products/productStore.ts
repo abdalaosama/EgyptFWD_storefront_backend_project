@@ -1,7 +1,7 @@
 import db from "../../database";
 
 export interface Product {
-    "prod_id" :number,
+    "prod_id"? :number,
     name : string,
     price : number
 }
